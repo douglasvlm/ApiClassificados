@@ -3,6 +3,7 @@
 #### Douglas Martin
 --------------------------------------------------------
 --Tabela SQLServer
+
 Create Table Classificados (
 	Id UNIQUEIDENTIFIER PRIMARY KEY default NEWID(),
 	Titulo varchar(4000),
@@ -11,7 +12,8 @@ Create Table Classificados (
 	
 );
 
---Connection String 
+--Connection String
+
 "Server=(localdb)\mssqllocaldb;Database=Classificados;Integrated Security=True"
 
 --------------------------------------------------------
