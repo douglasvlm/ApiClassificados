@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiClassificados</name>
+    </assembly>
+    <members>
+        <member name="M:ApiClassificados.Controllers.V1.ClassificadosController.Obter(System.Int32,System.Int32)">
+            <summary>
+            Buscar todos os classificados de forma paginada
+            </summary>
+            <remarks>
+            Não é possível retornar os classificados sem paginação
+            </remarks>
+            <param name="pagina">Indica qual página está sendo consultada. Mínimo 1</param>
+            <param name="quantidade">Indica a quantidade de reistros por página. Mínimo 1 e máximo 50</param>
+            <response code="200">Retorna a lista de classificados</response>
+            <response code="204">Caso não haja classificados</response>   
+        </member>
+        <member name="M:ApiClassificados.Controllers.V1.ClassificadosController.Obter(System.Guid)">
+            <summary>
+            Buscar um classificados pelo seu Id
+            </summary>
+            <param name="idClassificado">Id do classificados buscado</param>
+            <response code="200">Retorna o classificados filtrado</response>
+            <response code="204">Caso não haja classificados com este id</response>   
+        </member>
+        <member name="M:ApiClassificados.Controllers.V1.ClassificadosController.InserirJogo(ApiClassificados.InputModel.ClassificadoInputModel)">
+            <summary>
+            Inserir um classificado
+            </summary>
+            <param name="classificadoInputModel">Dados do classificado a ser inserido</param>
+            <response code="200">Caso o classificado seja inserido com sucesso</response>
+            <response code="422">Caso já exista um classificado com mesmo título para a mesma descrição</response>   
+        </member>
+        <member name="M:ApiClassificados.Controllers.V1.ClassificadosController.AtualizarClassificado(System.Guid,ApiClassificados.InputModel.ClassificadoInputModel)">
+            <summary>
+            Atualizar um classificado
+            </summary>
+            /// <param name="idClassificado">Id do classificado a ser atualizado</param>
+            <param name="classificadoInputModel">Novos dados para atualizar o classificado indicado</param>
+            <response code="200">Caso o classificado seja atualizado com sucesso</response>
+            <response code="404">Caso não exista um classificado com este Id</response>   
+        </member>
+        <member name="M:ApiClassificados.Controllers.V1.ClassificadosController.AtualizarClassificado(System.Guid,System.Double)">
+            <summary>
+            Atualizar o valor de um classificado
+            </summary>
+            /// <param name="idClassificado">Id do classificado a ser atualizado</param>
+            <param name="valor">Novo valor do classificado</param>
+            <response code="200">Caso o valor seja atualizado com sucesso</response>
+            <response code="404">Caso não exista um classificado com este Id</response>   
+        </member>
+        <member name="M:ApiClassificados.Controllers.V1.ClassificadosController.ApagarClassificado(System.Guid)">
+            <summary>
+            Excluir um classificado
+            </summary>
+            /// <param name="idClassificado">Id do classificado a ser excluído</param>
+            <response code="200">Caso o classificado excluído com sucesso</response>
+            <response code="404">Caso não exista um classificado com este Id</response>   
+        </member>
+    </members>
+</doc>
