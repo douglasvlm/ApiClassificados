@@ -5,6 +5,6 @@
     <h3>Autor: Douglas Martin</h3>   
     <hr/>
     <h4>Descrição:</h4> 
-    <img src="./image.jpg" width="300">
+    <img src="./image.jpg">
 </div>    
 <hr/>
