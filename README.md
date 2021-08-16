@@ -1,11 +1,10 @@
-## Projeto completamente modificado para Catálogo de Classificados
-### Autor
-#### Douglas Martin 
-
---------------------------------------------------------
-
-### DESCRIÇÃO
-#### Sua missão neste lab será construir uma arquitetura base para uma aplicação .net do zero.
-Original
-https://hermes.digitalinnovation.one/lab_projects/files/463794e1-f381-46c9-85f4-3bdd2b4ba572.zip
-
+<hr/>
+<div align="center">
+    <h1>Desenvolvimento de aplicações com .NET</h1>
+    <h2><i>API - Catálogo de Classificados</i></h2>
+    <h3>Autor: Douglas Martin</h3>   
+    <hr/>
+    <h4>Descrição:</h4> 
+    <p align="center"><img src="./image.jpg" width="300"></p>    
+</div>    
+<hr/>
